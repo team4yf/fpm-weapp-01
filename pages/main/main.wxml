@@ -1,0 +1,5 @@
+<!--pages/main.wxml-->
+<text>Main</text>
+<view>
+<button bindtap="scan">Scan</button>
+</view>

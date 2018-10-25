@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <image style="width: 200px; height: 200px;" src="https://camo.githubusercontent.com/6d008352eab80d0ad90e58c303b10c2a6579fbb8/68747470733a2f2f66696c652e697669657775692e636f6d2f77656170702d6c6f676f2e737667"></image>
+  <text style="font-size: 2em;">xxApp</text>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <i-panel title="输入用户信息">
+      <i-input value="{{ login_name }}" title="账户" autofocus placeholder="输入用户名" />
+      <i-input value="{{ login_pass }}" type="password" title="密码" placeholder="输入密码" />
+  </i-panel>
+    <view>
+      <i-button bind:click="handleLogin" type="info">登录</i-button>
+    </view>
+  </form>
+</view>
