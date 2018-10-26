@@ -1,0 +1,17 @@
+<i-panel title="OS" hide-border>
+  <view style="padding: 15px;">
+    <i-cell-group>
+      <i-cell title="Platform" value="linux"></i-cell>
+      <i-cell title="CPUS" value="1"></i-cell>
+      <i-cell title="MEM" value="77/1024"></i-cell>
+    </i-cell-group>
+  </view>
+</i-panel>
+<i-panel title="Server" hide-border>
+  <view style="padding: 15px;">
+    <i-cell-group>
+      <i-cell title="StartAt" value="1H"></i-cell>
+      <i-cell title="Version" value="V1.0.0"></i-cell>
+    </i-cell-group>
+  </view>
+</i-panel>

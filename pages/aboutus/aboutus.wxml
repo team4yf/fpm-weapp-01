@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+
+  <image style="width: 200px; height: 200px;" src="../../asset/image/logo-500.png"></image>
+
+  <text style="font-size: 2em;">xxApp</text>
+  <view>
+    <text>FPM Team Build</text>
+  </view>
+</view>

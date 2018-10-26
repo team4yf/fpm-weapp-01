@@ -1,14 +1,58 @@
 {
   "pages": [
+    "pages/console/console",
+    "pages/setting/setting",
+    "pages/plugin/plugin",
+    "pages/notification/notification",
+    "pages/post/post",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/main/main"
+    "pages/main/main",
+    "pages/aboutus/aboutus"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "backgroundColor":"#eee",
+    "backgroundColor": "#eee",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "FPM",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9a9a9",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fefefe",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/console/console",
+        "iconPath": "asset/image/icons/rank.png",
+        "selectedIconPath": "asset/image/icons-selected/rank.png",
+        "text": "Console"
+      },
+      {
+        "pagePath": "pages/console/console",
+        "iconPath": "asset/image/icons/list.png",
+        "selectedIconPath": "asset/image/icons-selected/list.png",
+        "text": "Post"
+      },
+      {
+        "pagePath": "pages/console/console",
+        "iconPath": "asset/image/icons/similar.png",
+        "selectedIconPath": "asset/image/icons-selected/similar.png",
+        "text": "Plugin"
+      },
+      {
+        "pagePath": "pages/console/console",
+        "iconPath": "asset/image/icons/notice.png",
+        "selectedIconPath": "asset/image/icons-selected/notice.png",
+        "text": "Notification"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "iconPath": "asset/image/icons/settings_light.png",
+        "selectedIconPath": "asset/image/icons-selected/settings_light.png",
+        "text": "Setting"
+      }
+    ]
   }
 }

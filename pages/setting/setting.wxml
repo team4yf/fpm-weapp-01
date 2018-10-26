@@ -1,0 +1,13 @@
+<view class="container">
+
+  <image src="../../asset/image/logo-500.png" style="width: 50px; height: 50px;" size="large"></image>
+
+  <text style="">MR.xxx</text>
+</view>
+<i-cell-group>
+  <view style="padding: 15px">
+    <i-cell title="测试的" value="1"></i-cell>
+    <i-cell title="关于我们" is-link url="/pages/aboutus/aboutus"></i-cell>
+    <i-cell title="--"></i-cell>
+  </view>
+</i-cell-group>

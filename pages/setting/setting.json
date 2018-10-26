@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-avatar": "../../libs/iview-weapp/avatar/index",
+    "i-cell-group": "../../libs/iview-weapp/cell-group/index",
+    "i-cell": "../../libs/iview-weapp/cell/index",
+    "i-input": "../../libs/iview-weapp/input/index",
+    "i-panel": "../../libs/iview-weapp/panel/index"
+  }
+}

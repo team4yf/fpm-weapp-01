@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-avatar": "../../libs/iview-weapp/avatar/index",
+    "i-button": "../../libs/iview-weapp/button/index",
+    "i-input": "../../libs/iview-weapp/input/index",
+    "i-panel": "../../libs/iview-weapp/panel/index"
+  }
+}
