@@ -1,43 +1,30 @@
 //index.js
 //获取应用实例
-const { fly } = require('../../utils/util.js');
-const { get } = fly;
+const { fpmc } = require('../../utils/util.js');
 const app = getApp()
 
 Page({
   data: {
     login_name: '',
     login_pass: '',
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  handleLogin: () =>{
-    fly.get('https://api.yunplus.io/ping')
-    .then(function (response) {
-      console.log(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
 
-    wx.showToast({
-      title: '成功',
-      icon: 'success',
-      duration: 2000
+  handleLogin: () =>{
+    new fpmc.Function('system.show').invoke({}).then(function(data){
+      wx.showToast({
+        title: '成功',
+        icon: 'success',
+        duration: 1000
+      });
+      setTimeout(function(){
+        wx.navigateTo({
+          url: '../main/main'
+        })
+      }, 800)
     })
-    
-    wx.navigateTo({
-      url: '../main/main'
-    })
-    // this.setData({})
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -68,7 +55,6 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

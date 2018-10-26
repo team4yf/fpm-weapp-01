@@ -7,9 +7,11 @@
     "build": "./node_modules/.bin/gulp"
   },
   "dependencies": {
+    "es6-promise": "^4.2.5",
     "flyio": "^0.6.2",
     "gulp": "^3.9.1",
     "iview-weapp": "^2.0.0",
+    "lodash": "^4.17.11",
     "yf-fpm-client-js": "^1.0.2"
   }
 }
