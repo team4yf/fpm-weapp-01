@@ -1,12 +1,15 @@
 <!--index.wxml-->
 <view class="container">
-  <image style="width: 200px; height: 200px;" src="https://github.com/team4yf/yf-fpm-server-logos/raw/master/images/fpm1-500_500_1.png"></image>
+
+  <image style="width: 200px; height: 200px;" src="../../asset/image/logo-500.png"></image>
+
   <text style="font-size: 2em;">xxApp</text>
-  <form bindsubmit="formSubmit" bindreset="formReset">
-    <i-panel title="输入用户信息">
+  <form>
+    <i-panel title="欢迎使用">
       <i-input value="{{ login_name }}" title="账户" autofocus placeholder="输入用户名" />
       <i-input value="{{ login_pass }}" type="password" title="密码" placeholder="输入密码" />
-  </i-panel>
+    </i-panel>
+
     <view>
       <i-button bind:click="handleLogin" type="info">登录</i-button>
     </view>
